@@ -1,58 +1,73 @@
 <!doctype html>
 
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 
-  <title>Youtube</title>
+    <title>Youtube</title>
 
-  <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="header-container">
-            <div class="left-header">                <!-- LEFT -->
-                <button class="material-icon" >                        <!-- Menu button -->
-                    <img src="images/menu.png" class="logo">
-                </button>
-                
+    <header class="header-container">
+        <div class="left-header">
+            <!-- LEFT -->
+            <button class="material-icon">
+                <!-- Menu button -->
+                <img src="images/menu.png" class="images">
+            </button>
+
+            <button class="material-icon" id="youtube">
+                <img src="images/Youtube.png" class="images" id="logo"> <!-- Youtube Image -->
+                <h1 id="youtube-text">YouTube</h1>
+            </button>
+        </div>
+
+        <div class="center-header">
+            <!--CENTER-->
+            <div class="searchbar-container">
+                <input type="text" placeholder="Search" class="searchbar"> <!-- Searchbar -->
                 <button class="material-icon">
-                    <img src="images/Youtube.png" class="logo">        <!-- Youtube Image -->
+                    <!-- Search button -->
+                    <img src="images/search.png" class="images">
                 </button>
             </div>
-            
-            <div class="center-header">             <!--CENTER-->
-                <input type="text" placeholder="Search">               <!-- Searchbar -->
 
-                <button class="material-icon" >                        <!-- Search button -->
-                    <img src="images/search.png" class="logo">
-                </button>
+            <button class="material-icon">
+                <!-- Mic button -->
+                <img src="images/mic.png" class="images">
+            </button>
+        </div>
 
-                <button class="material-icon" >                    <!-- Mic button -->
-                    <img src="images/mic.png" class="logo">
-                </button>
-            </div>
-            
-            <div class="right-header">              <!-- RIGHT -->
-                <button class="material-icon" >                    <!-- Create button -->
-                    <img src="images/video-plus.png" class="logo">
-                </button>
+        <div class="right-header">
+            <!-- RIGHT -->
+            <button class="material-icon-right">
+                <!-- Create button -->
+                <img src="images/video-plus.png" class="images">
+            </button>
 
-                <button class="material-icon" >                    <!-- Applications button -->
-                    <img src="images/dots-grid.png" class="logo">
-                </button>
+            <button class="material-icon-right">
+                <!-- Applications button -->
+                <img src="images/dots-grid.png" class="images">
+            </button>
 
-                <button class="material-icon" >                    <!-- Notifications button -->
-                    <img src="images/bell.png" class="logo">
-                </button>
+            <button class="material-icon-right">
+                <!-- Notifications button -->
+                <img src="images/bell.png" class="images">
+            </button>
 
-                <button class="material-icon" >                    <!-- Account -->
-                    <img src="images/account-box.png" class="logo">
-                </button>
-            </div>
+            <button class="material-icon-right">
+                <!-- Account -->
+                <img src="images/account-box.png" class="images">
+            </button>
         </div>
     </header>
+    <div class="body-container">
+        <iframe class= "video" width="1229" height="691" src="https://www.youtube.com/embed/lJIrF4YjHfQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </body>
+
 </html>

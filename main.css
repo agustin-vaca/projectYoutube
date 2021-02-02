@@ -15,7 +15,8 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -23,8 +24,17 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html {
+    height: 100%;
+    width: 100%;
+ }
 body {
-	line-height: 1;
+    line-height: 1;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column;
 }
 ol, ul {
 	list-style: none;
@@ -42,40 +52,158 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap') format('woff');
+    font-weight:300;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto&display=swap') format('woff');
+    font-weight:400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap') format('woff');
+    font-weight:500;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap') format('woff');
+    font-weight:400;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap') format('woff');
+    font-weight:700;
+}
+
+/*General*/
+
+
 .header-container{
     background-color: rgba(33, 33, 33, 0.98);
     display: flex;
+    align-items: center;
     width: 100%;
-    height: 56px;
+    height: 59px;
     position: fixed;
     top: 0;
 }
 
 .material-icon{
-    width: 10%;
-    height: auto;
+    width: 27px;
+    height: 27px;
     border: 0;
-    margin: 20px 20px 20px 20px;
+    margin: 3px 10px auto 27px;
+    padding: 0;
     background: none;
+    display: flex;
+    flex-direction: row;
 }
+
+.images {
+    background: none;
+    width: 26px;
+    height: 27px;
+    border: 0;
+    padding: 0;
+    align-items: center;
+}
+
+/*Left Header*/
 
 .left-header{
     float: left;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto 0 0;
 }
 
-.center-header{
-    display: block;
-    margin: auto;
+#logo {
+    height: 20px;
+    width: auto;
+    margin: 3px 0px auto 0px;
 }
+#youtube {
+    margin: 3px auto auto 14px;
+}
+#youtube-text {
+    color: white;
+    font-stretch: ultra-condensed;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 3px 0px auto 0px;
+    font-weight: 700;
+    font-size: 14pt;
+}
+
+/* Center */
+.center-header{
+    width: 640px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 115px 0 150px;
+    padding: 0;
+    align-items: center;
+}
+
+.searchbar-container {
+    display: flex;
+    width: 650px;
+    height: 28px;
+    border: rgba(255, 255, 255, 0.3);
+    border-width: 0.6px;
+    border-style: inset;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.searchbar {
+    background-color:  rgba(33, 33, 33, 1);
+    width: 635px;
+    height: 28px;
+    padding: 0;
+    border-width: 0.6px;
+    border-color: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* Right */
 
 .right-header{
     float: right;
+    display: flex;
+    flex-direction: row;
+    margin: 0 1.1% 0 auto;
 }
 
-.logo {
-    background: none;
-    width: 30px;
-    height: auto;
+.material-icon-right{
+    width: 27px;
+    height: 27px;
     border: 0;
+    margin: auto 17px auto 17px;
     padding: 0;
+    background: none;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Body */
+
+.body-container {
+    background: rgba(22, 22, 22, 0.98);
+    position: absolute;
+    top: 59px;
+    bottom: 0;
+    width: 100%; 
+}
+
+.video{
+    position: relative;
+    top: 4%;
+    left: 6%;
 }
